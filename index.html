@@ -1,45 +1,251 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.css">
-    <link rel="shortcut icon" href="https://bulma.io/assets/brand/Bulma%20Icon.svg" type="image/x-icon">
-    <title>Bulma</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="bulma/css/bulma.css">
+
+  <title>Bulma</title>
 </head>
 
-<body>
-    <header>
-       <nav class="navbar px-4 " role="navigation" aria-label="main navigation">
-  
-  <div class="navbar-menu is-active ">
-    
-   
-    <div class="navbar-start">
-      <a class="navbar-item"><img src="https://bulma.io/assets/brand/Bulma%20Logo.svg" alt="Logo do bulma"></a>
-      </div>
-      
-      <div>
-        <ul class="  is-flex">
-      <li><a class="navbar-item">Home</a></li>
-      <li><a class="navbar-item">Sobre</a></li>
-      <li><a class="navbar-item">Documentação</a></li>
-      <li><a class="navbar-item">Questionário</a></li>
-      <li><a class="navbar-item">Referências</a></li>
-      </ul>
-    </div>
-    
-   
-    <div class="navbar-end"></div>
-        <a class="navbar-item fa-2xl" href="https://github.com"><img src="Img/githublogo.svg" alt="Logo github">
-      </a>
-      <a class="navbar-item">Download</a>
-    </div>
+<body class="has-navbar-fixed-top">
+  <header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item mx-2" href="index.html">
+          <img src="https://bulma.io/assets/brand/Bulma%20Logo.svg" width="112" height="28">
+        </a>
 
-  </div>
-</nav>
-    </header>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+
+          <a class="navbar-item ">
+            <img src="Img/lupa.png" alt="">
+            <p>
+              <strong>
+                Sobre
+              </strong>
+            </p>
+          </a>
+
+          <a class="navbar-item ">
+            <img src="Img/icons8-livro-72.png" alt="">
+            <p>
+              <strong>
+                Documentação
+              </strong>
+            </p>
+
+          </a>
+          <a class="navbar-item ">
+            <img src="Img/icons8-test-passed-72.png" alt="">
+            <p>
+              <strong>
+                Questionário
+              </strong>
+            </p>
+
+          </a>
+          <a class="navbar-item ">
+
+            <img src="Img/referencia.png" alt="">
+            <p><strong> Referências</strong></p>
+
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable mx-2">
+            <a class="navbar-link">
+              <img src="Img/criador-de-conteudo.png" alt="">
+              <p><strong>Criadores</strong></p>
+
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://github.com/nikolascaixeta" target="_blank">
+                <img src="Img/sinais-de-codigo.png" alt="Icone que representa uma tag de codigo fechando">
+                <p><strong>Nikolas Caixeta</strong></p>
+
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/gabrielhenriquepereira" target="_blank">
+                <img src="Img/contexto.png" alt="Icone de 2 engrenagens ">
+                <p><strong>Gabriel Henrique</strong></p>
+
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/Clara528" target="_blank">
+                <img src="Img/escrever.png" alt="Icone de um lapis escrevendo no papel">
+                <p><strong>Ana Clara</strong></p>
+
+              </a>
+
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/larissa1alves" target="_blank">
+                <img src="Img/paleta-de-cores.png" alt="Icone que representa uma poaleta de cores com um pincel">
+                <p><strong>Larissa</strong></p>
+
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item mx-2">
+            <div class="buttons">
+              <a class="button is-light" href="https://github.com/nikolascaixeta/BULMA">
+                <img src="Img/githublogo.svg" alt="Logo do GitHub">
+              </a>
+              <a class="button is-primary" href="#">
+                <strong>Download</strong>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="hero is-info is-fullheight has-text-centered"
+      style="background-image: url('Img/ChatGPT\ Image\ 14\ de\ ago.\ de\ 2026\,\ 20_43_07.png'); background-size: cover; background-position: center;">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1 is-spaced" style="font-size: 3.5rem;">
+            Bulma: O framework <br> CSS definitivo.
+          </h1>
+          <h2 class="subtitle is-size-4">
+            O Bulma é o framework ideal para simplificar o trabalho de estilisação de front-engine, <br> criando
+            interfaces responsivas e dinâmicas de forma simples sem js.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <body>
+      <section class="section">
+        <div class="container">
+          <div class="heading">
+
+            <div class="container">
+              <div class="columns is-vcentered is-centered is-mobile">
+
+
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img src="Img/historia.png" alt="Ícone de um pergaminho escrito representando historico de criação">
+                  </figure>
+                </div>
+
+
+                <div class="column is-narrow has-text-centered">
+                  <h1 class="title"> <strong>Histórico de criação e evolução </strong></h1>
+                </div>
+
+
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img src="Img/evolucao.png"
+                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
+                  </figure>
+                </div>
+
+              </div>
+            </div>
+            <div class="columns">
+
+              <div class="column">
+                <h2 class="subtitle">
+                  Lançado em 2016 como um projeto de código aberto criado por Jeremy Thomas, um desenvolvedor front-end,
+                  o Bulma nasceu com uma proposta ousada: eliminar completamente os scripts pesados e focar 100% na
+                  estilização. Desde a versão v0.0.1, ele provou ao mercado que é possível estruturar layouts complexos
+                  usando apenas classes intuitivas e fáceis de ler, reduzindo drasticamente o tamanho final dos arquivos
+                  do seu projeto.</h2>
+              </div>
+              <div class="column">
+                <h2 class="subtitle">
+                  Foi na consagrada série v0.9 que o framework atingiu o ápice de sua popularidade internacional,
+                  tornando-se a alternativa definitiva e mais leve aos concorrentes tradicionais. Ao adotar o Flexbox
+                  como padrão absoluto para o seu famoso sistema de colunas, ele conquistou uma comunidade global
+                  gigantesca, garantindo milhares de tutoriais, códigos prontos e suporte estável para qualquer tipo de
+                  aplicação web.
+                </h2>
+              </div>
+
+              <div class="column">
+                <h2 class="subtitle">
+                  A nova geração v1 eleva o ecossistema a outro nível, integrando o poder do Dart Sass a um suporte
+                  robusto para variáveis CSS nativas. As atualizações mais recentes trouxeram recursos altamente
+                  requisitados pelo mercado atual, como o sistema Smart Grid, modo escuro (Dark Mode) automatizado e um
+                  controle modular profundo, permitindo customizações completas com performance ultra-otimizada.</h2>
+                </h2>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </body>
+
+    <body>
+
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <div class="container">
+              <div class="columns is-vcentered is-centered is-mobile">
+
+
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img src="Img/centro-de-dados.png" alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
+                  </figure>
+                </div>
+
+
+                <div class="column is-narrow has-text-centered">
+                  <h1 class="title"> <strong>Empresa responsável </strong></h1>
+                </div>
+
+
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img src="Img/responsabilidade.png"
+                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
+                  </figure>
+                </div>
+
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <h2 class="subtitle"> O Bulma não pertence a uma empresa corporativa tradicional — ele se consolidou como um ecossistema open-source totalmente independente, projetado pelo renomado desenvolvedor front-end Jeremy Thomas. A manutenção contínua e a evolução técnica do framework acontecem de forma aberta e transparente através do GitHub oficial (jgthms/bulma), impulsionadas por milhares de colaboradores voluntários ao redor do mundo. Toda a base de código é distribuída sob a licença MIT, o que assegura liberdade jurídica total para você utilizar, modificar e comercializar seus projetos sem restrições ou custos.</h2>
+              </div>
+              <div class="column">
+                <h2 class="subtitle">Essa independência garante que o desenvolvimento do Bulma seja guiado 100% pelas necessidades reais da comunidade, e não por interesses corporativos. Sem atualizações forçadas que quebram o seu código de surpresa ou taxas ocultas de licenciamento, você tem a segurança de construir projetos comerciais, governamentais ou pessoais em uma plataforma verdadeiramente estável. O ecossistema é mantido vivo de forma transparente através do apoio de patrocinadores globais e desenvolvedores que utilizam a ferramenta diariamente para acelerar a web.</h2>
+              </div>
+              
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+
+    </body>
+   
+  </main>
 </body>
 
 </html>
