@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
   <link rel="stylesheet" href="bulma/css/bulma.css">
   <link rel="stylesheet" href="estilo.css">
+  <link rel="shortcut icon" href="https://bulma.io/assets/brand/Bulma%20Icon.svg" type="image/x-icon">
 
   <title>Bulma</title>
 </head>
@@ -29,16 +30,6 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-
-          <a class="navbar-item ">
-            <img src="Img/lupa.png" alt="">
-            <p>
-              <strong>
-                Sobre
-              </strong>
-            </p>
-          </a>
-
           <a class="navbar-item ">
             <img src="Img/icons8-livro-72.png" alt="">
             <p>
@@ -48,6 +39,54 @@
             </p>
 
           </a>
+          <div class="navbar-item has-dropdown is-hoverable mx-2">
+            <a class="navbar-link">
+              <img src="Img/lupa.png" alt="">
+              <p><strong>Sobre</strong></p>
+
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="">
+                <img src="Img/sinais-de-codigo.png" alt="Icone que representa uma tag de codigo fechando">
+                <p><strong>Histórico de criação e evolução</strong></p>
+
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="">
+                <img src="Img/contexto.png" alt="Icone de 2 engrenagens ">
+                <p><strong>Empresa responsável</strong></p>
+
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="">
+                <img src="Img/escrever.png" alt="Icone de um lapis escrevendo no papel">
+                <p><strong>Comunidade de desenvolvimento</strong></p>
+
+              </a>
+
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="">
+                <img src="Img/paleta-de-cores.png" alt="Icone que representa uma poaleta de cores com um pincel">
+                <p><strong>Motivação para uso</strong></p>
+
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="">
+                <img src="Img/paleta-de-cores.png" alt="Icone que representa uma poaleta de cores com um pincel">
+                <p><strong>Vantagens</strong></p>
+
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="">
+                <img src="Img/paleta-de-cores.png" alt="Icone que representa uma poaleta de cores com um pincel">
+                <p><strong>Exemplos de usabilidade</strong></p>
+
+              </a>
+            </div>
+          </div>
+
+
           <a class="navbar-item ">
             <img src="Img/icons8-test-passed-72.png" alt="">
             <p>
@@ -129,6 +168,116 @@
             O Bulma é o framework ideal para simplificar o trabalho de estilisação de front-engine, <br> criando
             interfaces responsivas e dinâmicas de forma simples sem js.
           </h2>
+        </div>
+      </div>
+    </section>
+    <section class="hero has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <div class="container mb-3">
+            <div class="columns is-vcentered is-centered is-mobile">
+
+
+              <div class="column is-narrow">
+                <figure class="image is-64x64">
+                  <img src="Img/centro-de-dados.png"
+                    alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
+                </figure>
+              </div>
+
+
+              <div class="column is-narrow has-text-centered">
+                <h1 class="title"> <strong>Documentação</strong></h1>
+              </div>
+
+
+              <div class="column is-narrow">
+                <figure class="image is-64x64">
+                  <img src="Img/responsabilidade.png"
+                    alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
+                </figure>
+              </div>
+
+            </div>
+          </div>
+          <h2 class="subtitle">
+            A documentação oficial fica no diretório "docs" do repositório e é construída com a ferramenta Jekyll
+            (baseada em Ruby), disponível no site oficial bulma.io/documentation. Ela é organizada por categorias
+            (colunas, layout, formulários, elementos, componentes, helpers) e é considerada bem completa e didática, com
+            muitos exemplos práticos — um dos pontos frequentemente elogiados pela comunidade.
+          </h2>
+          <div class="columns">
+            <div class="column">
+              <a href="#modifiers" id="cardEscuro" class="box card-docs card-flutuante"
+                style="border: 1px #485fc7 solid;">
+                <article class="media">
+
+                  <div class="media-left">
+                    <span class="icon is-large has-background-link-light has-text-link" style="border-radius: 8px;">
+                      <img src="Img/lua-crescente.png" alt="Ícone de modificadores" class="is-size-4">
+                    </span>
+                  </div>
+
+                  <div class="media-content">
+                    <h4 class="title is-5 mb-1">Modo escuro</h4>
+                    <p class="subtitle is-6 has-text-grey">Demonstração pratica do modo escuro nativo e sua
+                      implementação</p>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="column"> <a href="#modifiers" class="box card-docs card-flutuante"
+                style="border: 1px #00d1b2 solid;">
+                <article class="media">
+
+                  <div class="media-left">
+                    <span class="icon is-large has-background-primary-light" style="border-radius: 8px;">
+                      <img src="Img/sinais-de-codigo.png" alt="Ícone de modificadores" class="is-size-4">
+                    </span>
+                  </div>
+
+                  <div class="media-content">
+                    <h4 class="title is-5 mb-1">Colunas</h4>
+                    <p class="subtitle is-6 has-text-grey">Demonstração prática de como utilizar as colunas e bordas no
+                      Bulma</p>
+                  </div>
+                </article>
+              </a></div>
+            <div class="column"><a href="#modifiers" class="box card-docs card-flutuante"
+                style="border: 1px #f14668 solid;">
+                <article class="media">
+
+                  <div class="media-left">
+                    <span class="icon is-large has-background-danger-light" style="border-radius: 8px;">
+                      <img src="Img/bater-papo.png" alt="Ícone de modificadores" class="is-size-4">
+                    </span>
+                  </div>
+
+                  <div class="media-content">
+                    <h4 class="title is-5 mb-1">Mensagem</h4>
+                    <p class="subtitle is-6 has-text-grey">Demonstração prática de implementar e utilizar as mensagens
+                    </p>
+                  </div>
+                </article>
+              </a></div>
+            <div class="column"><a href="#modifiers" class="box card-docs card-flutuante"
+                style="border: 1px #ffe08a solid;">
+                <article class="media">
+
+                  <div class="media-left">
+                    <span class="icon is-large has-background-warning-light" style="border-radius: 8px;">
+                      <img src="Img/sinais-de-codigo.png" alt="Ícone de modificadores" class="is-size-4">
+                    </span>
+                  </div>
+
+                  <div class="media-content">
+                    <h4 class="title is-5 mb-1">Notificações</h4>
+                    <p class="subtitle is-6 has-text-grey">Demonstração prática de implementar e utilizar as
+                      notificaçôes</p>
+                  </div>
+                </article>
+              </a></div>
+          </div>
         </div>
       </div>
     </section>
@@ -521,111 +670,187 @@
         </div>
       </div>
     </section>
-    <section class="hero has-text-centered">
-      <div class="hero-body">
+
+    <body>
+      <section class="section">
         <div class="container">
-          <div class="container mb-3">
-            <div class="columns is-vcentered is-centered is-mobile">
+          <div class="heading">
+            <div class="container mb-3">
+              <div class="columns is-vcentered is-centered is-mobile">
 
 
-              <div class="column is-narrow">
-                <figure class="image is-64x64">
-                  <img src="Img/centro-de-dados.png"
-                    alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
-                </figure>
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img src="Img/centro-de-dados.png"
+                      alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
+                  </figure>
+                </div>
+
+
+                <div class="column is-narrow has-text-centered">
+                  <h1 class="title"> <strong>Questionário</strong></h1>
+                </div>
+
+
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img src="Img/responsabilidade.png"
+                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
+                  </figure>
+                </div>
+
               </div>
-
-
-              <div class="column is-narrow has-text-centered">
-                <h1 class="title"> <strong>Documentação</strong></h1>
+            </div>
+            <h2 class="subtitle has-text-centered">
+              Responda um exemplo de questionário simples:
+            </h2>
+            <form>
+              <div class="columns">
+                <div class="column">
+                  <label class="label mb-2" for="nome">Nome:</label>
+                  <input id="nome" class="input is-medium is-link mb-3" type="text" placeholder="Digite seu nome"
+                    required maxlength="50" />
+                  <label class="label mb-2" for="data">Data de nascimento</label>
+                  <input id="data" class="input is-medium is-info " type="date" required />
+                </div>
+                <div class="column">
+                  <label class="label mb-2" for="email">E-mail:</label>
+                  <input id="email" class="input is-medium is-primary mb-3" type="email"
+                    placeholder="meuEmail@gmail.com" maxlength="50" required />
+                  <label class="label mb-2" for="senha">Senha:</label>
+                  <input id="Senha" class="input is-medium is-danger " type="password" placeholder="*******"
+                    minlength="6" maxlength="12" required />
+                </div>
               </div>
+              <label class="label mb-2" for="txtarea">Sugestões</label>
+              <textarea id="txtarea" class="textarea is-warning is-medium mb-3"
+                placeholder="Eu sugiro que....."></textarea>
+              <div class="columns ">
+                <div class="column  ">
+                  <div class="select is-info">
+                    <select class="is-fullwidth">
+                      <option>Qual foi a melhor parte do site</option>
+                      <option>Documentação</option>
+                      <option>Histórico de criação e evolução</option>
+                      <option>Empresa responsável</option>
+                      <option>Comunidade de desenvolvimento</option>
+                      <option>Motivação para uso</option>
+                      <option>Vantagens</option>
+                      <option>Exemplos de usabilidade</option>
+                      <option>Questionário</option>
+                    </select>
+                  </div>
+                </div>
 
-
-              <div class="column is-narrow">
-                <figure class="image is-64x64">
-                  <img src="Img/responsabilidade.png"
-                    alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                </figure>
+                <div class="column ">
+                  <button class="button is-success is-medium is-fullwidth">Enviar</button>
+                </div>
               </div>
-
+            </form>
+          </div>
+        </div>
+      </section>
+    </body>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <section class="hero">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Teste Gratuito
+              </h1>
+              <h2 class="subtitle">
+                Tenha um breve vislumbre do que o bulma pode te oferecer em uma semana
+              </h2>
+              <ul>
+                <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Teste sem fidelidade.</li> <br>
+                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor ferramenta de CSS disponivel.
+                </li> <br>
+                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Fazer parte dos.</li
+                  style="list-style-type: none;"> <br>
+                <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Uso ilimitado
+                </li> <br>
+              </ul>
             </div>
           </div>
-          <h2 class="subtitle">
-            A documentação oficial fica no diretório "docs" do repositório e é construída com a ferramenta Jekyll
-            (baseada em Ruby), disponível no site oficial bulma.io/documentation. Ela é organizada por categorias
-            (colunas, layout, formulários, elementos, componentes, helpers) e é considerada bem completa e didática, com
-            muitos exemplos práticos — um dos pontos frequentemente elogiados pela comunidade.
-          </h2>
-          <div class="columns">
-            <div class="column">
-              <a href="#modifiers" id="cardEscuro" class="box card-docs card-flutuante" style="border: 1px #485fc7 solid;">
-                <article class="media">
-
-                  <div class="media-left">
-                    <span class="icon is-large has-background-link-light has-text-link" style="border-radius: 8px;">
-                      <img src="Img/lua-crescente.png" alt="Ícone de modificadores" class="is-size-4">
-                    </span>
-                  </div>
-
-                  <div class="media-content">
-                    <h4 class="title is-5 mb-1">Modo escuro</h4>
-                    <p class="subtitle is-6 has-text-grey">Demonstração pratica do modo escuro nativo e sua
-                      implementação</p>
-                  </div>
-                </article>
-              </a>
-            </div>
-            <div class="column"> <a href="#modifiers" class="box card-docs card-flutuante" style="border: 1px #00d1b2 solid;" >
-                <article class="media">
-
-                  <div class="media-left">
-                    <span class="icon is-large has-background-primary-light" style="border-radius: 8px;">
-                      <img src="Img/sinais-de-codigo.png" alt="Ícone de modificadores" class="is-size-4">
-                    </span>
-                  </div>
-
-                  <div class="media-content">
-                    <h4 class="title is-5 mb-1">Colunas</h4>
-                    <p class="subtitle is-6 has-text-grey">Demonstração prática de como utilizar as colunas e bordas no Bulma</p>
-                  </div>
-                </article>
-              </a></div>
-            <div class="column"><a href="#modifiers" class="box card-docs card-flutuante" style="border: 1px #f14668 solid;"  >
-                <article class="media">
-
-                  <div class="media-left">
-                    <span class="icon is-large has-background-danger-light" style="border-radius: 8px;">
-                      <img src="Img/bater-papo.png" alt="Ícone de modificadores" class="is-size-4">
-                    </span>
-                  </div>
-
-                  <div class="media-content">
-                    <h4 class="title is-5 mb-1">Mensagem</h4>
-                    <p class="subtitle is-6 has-text-grey">Demonstração prática de implementar e utilizar as mensagens</p>
-                  </div>
-                </article>
-              </a></div>
-            <div class="column"><a href="#modifiers" class="box card-docs card-flutuante" style="border: 1px #ffe08a solid;" >
-                <article class="media">
-
-                  <div class="media-left">
-                    <span class="icon is-large has-background-warning-light" style="border-radius: 8px;">
-                      <img src="Img/sinais-de-codigo.png" alt="Ícone de modificadores" class="is-size-4">
-                    </span>
-                  </div>
-
-                  <div class="media-content">
-                    <h4 class="title is-5 mb-1">Notificações</h4>
-                    <p class="subtitle is-6 has-text-grey">Demonstração prática de implementar e utilizar as notificaçôes</p>
-                  </div>
-                </article>
-              </a></div>
+        </section>
+      </div>
+      <div class="column">
+        Second column
+      </div>
+    </div>
+  </main>
+  <footer class="footer" style="border-top: #00d1b2 1px solid;">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column">
+            <a href="https://bulma.io">
+              <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma" width="256"
+                height="48">
+            </a>
+          </div>
+          <div class="column">
+            <h3 class="has-text-black-bis is-size-4 mb-3">Atalhos:</h3>
+            <ul>
+              <li><a href="">
+                  <p class="has-text-link mb-3">Sobre</p>
+                </a></li>
+              <li><a href="">
+                  <p class="has-text-link mb-3">Documentação</p>
+                </a></li>
+              <li><a href="">
+                  <p class="has-text-link mb-3">Questionário</p>
+                </a></li>
+              <li><a href="">
+                  <p class="has-text-link mb-3">Comprar framework</p>
+                </a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="has-text-black-bis is-size-4 mb-3">Referências:</h3>
+            <ul>
+              <li><a href="https://dev.to/sm0ke/bulma-css-a-curated-list-with-resources-4o8j">
+                  <p class="has-text-link mb-3">https://dev.to/sm0ke/bulma-css-a-curated-list-with-resources-4o8j</p>
+                </a></li>
+              <li><a href="https://github.com/jgthms/bulma">
+                  <p class="has-text-link mb-3">https://github.com/jgthms/bulma</p>
+                </a></li>
+              <li><a href="https://blog.logrocket.com/bulma-css-adoption-guide/">
+                  <p class="has-text-link mb-3">https://blog.logrocket.com/bulma-css-adoption-guide/</p>
+                </a></li>
+              <li><a href="https://www.softwaretestinghelp.com/bulma-css-framework/">
+                  <p class="has-text-link mb-3">https://www.softwaretestinghelp.com/bulma-css-framework/</p>
+                </a></li>
+              <li><a href="https://www.geeksforgeeks.org/css/bulma/">
+                  <p class="has-text-link mb-3">https://www.geeksforgeeks.org/css/bulma/</p>
+                </a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="has-text-black-bis is-size-4 mb-3">Atribuições:</h3>
+            <ul>
+              <li><a href="https://www.flaticon.com/br/icones-gratis/notificacao" title="notificação ícones">Notificação
+                  ícones criados por Pixel perfect - Flaticon</a></li>
+              <li><a href="https://github.com/jgthms/bulma">
+                  <p class="has-text-link mb-3">https://github.com/jgthms/bulma</p>
+                </a></li>
+              <li><a href="https://blog.logrocket.com/bulma-css-adoption-guide/">
+                  <p class="has-text-link mb-3">https://blog.logrocket.com/bulma-css-adoption-guide/</p>
+                </a></li>
+              <li><a href="https://www.softwaretestinghelp.com/bulma-css-framework/">
+                  <p class="has-text-link mb-3">https://www.softwaretestinghelp.com/bulma-css-framework/</p>
+                </a></li>
+              <li><a href="https://www.geeksforgeeks.org/css/bulma/">
+                  <p class="has-text-link mb-3">https://www.geeksforgeeks.org/css/bulma/</p>
+                </a></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    </div>
-  </main>
+  </footer>
 </body>
 
 </html>
