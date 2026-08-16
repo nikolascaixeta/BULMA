@@ -48,38 +48,38 @@
 
             <div class="navbar-dropdown">
               <a class="navbar-item" href="">
-                <img src="Img/sinais-de-codigo.png" alt="Icone que representa uma tag de codigo fechando">
+                <img src="Img/historia.png" alt="Icone que representa uma tag de codigo fechando">
                 <p><strong>Histórico de criação e evolução</strong></p>
 
               </a>
               <hr class="navbar-divider">
               <a class="navbar-item" href="">
-                <img src="Img/contexto.png" alt="Icone de 2 engrenagens ">
+                <img src="Img/centro-de-dados.png" alt="Icone de 2 engrenagens ">
                 <p><strong>Empresa responsável</strong></p>
 
               </a>
               <hr class="navbar-divider">
               <a class="navbar-item" href="">
-                <img src="Img/escrever.png" alt="Icone de um lapis escrevendo no papel">
+                <img src="Img/responsabilidade.png" alt="Icone de um lapis escrevendo no papel">
                 <p><strong>Comunidade de desenvolvimento</strong></p>
 
               </a>
 
               <hr class="navbar-divider">
               <a class="navbar-item" href="">
-                <img src="Img/paleta-de-cores.png" alt="Icone que representa uma poaleta de cores com um pincel">
+                <img src="Img/alvo-de-dardos.png" alt="Icone que representa uma poaleta de cores com um pincel">
                 <p><strong>Motivação para uso</strong></p>
 
               </a>
               <hr class="navbar-divider">
               <a class="navbar-item" href="">
-                <img src="Img/paleta-de-cores.png" alt="Icone que representa uma poaleta de cores com um pincel">
+                <img src="Img/evolucao.png" alt="Icone que representa uma poaleta de cores com um pincel">
                 <p><strong>Vantagens</strong></p>
 
               </a>
               <hr class="navbar-divider">
               <a class="navbar-item" href="">
-                <img src="Img/paleta-de-cores.png" alt="Icone que representa uma poaleta de cores com um pincel">
+                <img src="Img/interface.png" alt="Icone que representa uma poaleta de cores com um pincel">
                 <p><strong>Exemplos de usabilidade</strong></p>
 
               </a>
@@ -98,8 +98,8 @@
           </a>
           <a class="navbar-item ">
 
-            <img src="Img/referencia.png" alt="">
-            <p><strong> Referências</strong></p>
+            <img src="Img/payment-method.png" alt="">
+            <p><strong> Assine agora</strong></p>
 
           </a>
 
@@ -192,10 +192,46 @@
 
 
               <div class="column is-narrow">
-                <figure class="image is-64x64">
-                  <img src="Img/responsabilidade.png"
-                    alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                </figure>
+                <button class="button is-primary" id="open-modal-btn">
+                  Ver Código
+                </button>
+
+
+                <div class="modal" id="code-modal">
+                  <div class="modal-background" id="modal-bg"></div>
+
+                  <div class="modal-content">
+                    <div class="box">
+                      <h3 class="title is-4">Código dessa seção</h3>
+                      <pre><code>
+    /////////////////
+      </code></pre>
+                    </div>
+                  </div>
+
+                  <button class="modal-close is-large" aria-label="close" id="close-modal-btn"></button>
+                </div>
+
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const openBtn = document.getElementById('open-modal-btn');
+                    const closeBtn = document.getElementById('close-modal-btn');
+                    const modalBg = document.getElementById('modal-bg');
+                    const modal = document.getElementById('code-modal');
+
+                    openBtn.addEventListener('click', () => {
+                      modal.classList.add('is-active');
+                    });
+
+                    const closeModal = () => {
+                      modal.classList.remove('is-active');
+                    };
+
+                    closeBtn.addEventListener('click', closeModal);
+                    modalBg.addEventListener('click', closeModal);
+                  });
+                </script>
               </div>
 
             </div>
@@ -304,10 +340,46 @@
 
 
                 <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/evolucao.png"
-                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                  </figure>
+                  <button class="button is-primary" id="open-modal-btn2">
+                    Ver Código
+                  </button>
+
+
+                  <div class="modal" id="code-modal">
+                    <div class="modal-background" id="modal-bg2"></div>
+
+                    <div class="modal-content">
+                      <div class="box">
+                        <h3 class="title is-4">Código dessa seção</h3>
+                        <pre><code>
+    /////////////////
+      </code></pre>
+                      </div>
+                    </div>
+
+                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn2"></button>
+                  </div>
+
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const openBtn = document.getElementById('open-modal-btn2');
+                      const closeBtn = document.getElementById('close-modal-btn2');
+                      const modalBg = document.getElementById('modal-bg2');
+                      const modal = document.getElementById('code-modal');
+
+                      openBtn.addEventListener('click', () => {
+                        modal.classList.add('is-active');
+                      });
+
+                      const closeModal = () => {
+                        modal.classList.remove('is-active');
+                      };
+
+                      closeBtn.addEventListener('click', closeModal);
+                      modalBg.addEventListener('click', closeModal);
+                    });
+                  </script>
                 </div>
 
               </div>
@@ -374,10 +446,46 @@
 
 
                 <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/responsabilidade.png"
-                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                  </figure>
+                  <button class="button is-primary" id="open-modal-btn3">
+                    Ver Código
+                  </button>
+
+
+                  <div class="modal" id="code-modal3">
+                    <div class="modal-background" id="modal-bg3"></div>
+
+                    <div class="modal-content">
+                      <div class="box">
+                        <h3 class="title is-4">Código dessa seção</h3>
+                        <pre><code>
+    /////////////////
+      </code></pre>
+                      </div>
+                    </div>
+
+                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn3"></button>
+                  </div>
+
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const openBtn = document.getElementById('open-modal-btn3');
+                      const closeBtn = document.getElementById('close-modal-btn3');
+                      const modalBg = document.getElementById('modal-bg3');
+                      const modal = document.getElementById('code-modal');
+
+                      openBtn.addEventListener('click', () => {
+                        modal.classList.add('is-active');
+                      });
+
+                      const closeModal = () => {
+                        modal.classList.remove('is-active');
+                      };
+
+                      closeBtn.addEventListener('click', closeModal);
+                      modalBg.addEventListener('click', closeModal);
+                    });
+                  </script>
                 </div>
 
               </div>
@@ -417,8 +525,8 @@
 
                 <div class="column is-narrow">
                   <figure class="image is-64x64">
-                    <img src="Img/centro-de-dados.png"
-                      alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
+                    <img src="Img/responsabilidade.png"
+                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
                   </figure>
                 </div>
 
@@ -429,10 +537,46 @@
 
 
                 <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/responsabilidade.png"
-                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                  </figure>
+                  <button class="button is-primary" id="open-modal-btn4">
+                    Ver Código
+                  </button>
+
+
+                  <div class="modal" id="code-modal4">
+                    <div class="modal-background" id="modal-bg4"></div>
+
+                    <div class="modal-content">
+                      <div class="box">
+                        <h3 class="title is-4">Código dessa seção</h3>
+                        <pre><code>
+    /////////////////
+      </code></pre>
+                      </div>
+                    </div>
+
+                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn3"></button>
+                  </div>
+
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const openBtn = document.getElementById('open-modal-btn4');
+                      const closeBtn = document.getElementById('close-modal-btn4');
+                      const modalBg = document.getElementById('modal-bg4');
+                      const modal = document.getElementById('code-modal');
+
+                      openBtn.addEventListener('click', () => {
+                        modal.classList.add('is-active');
+                      });
+
+                      const closeModal = () => {
+                        modal.classList.remove('is-active');
+                      };
+
+                      closeBtn.addEventListener('click', closeModal);
+                      modalBg.addEventListener('click', closeModal);
+                    });
+                  </script>
                 </div>
 
               </div>
@@ -483,7 +627,7 @@
 
                 <div class="column is-narrow">
                   <figure class="image is-64x64">
-                    <img src="Img/centro-de-dados.png"
+                    <img src="Img/alvo-de-dardos.png"
                       alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
                   </figure>
                 </div>
@@ -495,10 +639,46 @@
 
 
                 <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/responsabilidade.png"
-                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                  </figure>
+                  <button class="button is-primary" id="open-modal-btn5">
+                    Ver Código
+                  </button>
+
+
+                  <div class="modal" id="code-modal5">
+                    <div class="modal-background" id="modal-bg5"></div>
+
+                    <div class="modal-content">
+                      <div class="box">
+                        <h3 class="title is-4">Código dessa seção</h3>
+                        <pre><code>
+    /////////////////
+      </code></pre>
+                      </div>
+                    </div>
+
+                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn5"></button>
+                  </div>
+
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const openBtn = document.getElementById('open-modal-btn5');
+                      const closeBtn = document.getElementById('close-modal-btn5');
+                      const modalBg = document.getElementById('modal-bg5');
+                      const modal = document.getElementById('code-modal');
+
+                      openBtn.addEventListener('click', () => {
+                        modal.classList.add('is-active');
+                      });
+
+                      const closeModal = () => {
+                        modal.classList.remove('is-active');
+                      };
+
+                      closeBtn.addEventListener('click', closeModal);
+                      modalBg.addEventListener('click', closeModal);
+                    });
+                  </script>
                 </div>
 
               </div>
@@ -549,7 +729,7 @@
 
               <div class="column is-narrow">
                 <figure class="image is-64x64">
-                  <img src="Img/centro-de-dados.png"
+                  <img src="Img/evolucao.png"
                     alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
                 </figure>
               </div>
@@ -561,10 +741,46 @@
 
 
               <div class="column is-narrow">
-                <figure class="image is-64x64">
-                  <img src="Img/responsabilidade.png"
-                    alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                </figure>
+                <button class="button is-primary" id="open-modal-btn6">
+                  Ver Código
+                </button>
+
+
+                <div class="modal" id="code-modal6">
+                  <div class="modal-background" id="modal-bg6"></div>
+
+                  <div class="modal-content">
+                    <div class="box">
+                      <h3 class="title is-4">Código dessa seção</h3>
+                      <pre><code>
+    /////////////////
+      </code></pre>
+                    </div>
+                  </div>
+
+                  <button class="modal-close is-large" aria-label="close" id="close-modal-btn6"></button>
+                </div>
+
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const openBtn = document.getElementById('open-modal-btn6');
+                    const closeBtn = document.getElementById('close-modal-btn6');
+                    const modalBg = document.getElementById('modal-bg6');
+                    const modal = document.getElementById('code-modal');
+
+                    openBtn.addEventListener('click', () => {
+                      modal.classList.add('is-active');
+                    });
+
+                    const closeModal = () => {
+                      modal.classList.remove('is-active');
+                    };
+
+                    closeBtn.addEventListener('click', closeModal);
+                    modalBg.addEventListener('click', closeModal);
+                  });
+                </script>
               </div>
 
             </div>
@@ -627,7 +843,7 @@
 
               <div class="column is-narrow">
                 <figure class="image is-64x64">
-                  <img src="Img/centro-de-dados.png"
+                  <img src="Img/interface.png"
                     alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
                 </figure>
               </div>
@@ -639,10 +855,46 @@
 
 
               <div class="column is-narrow">
-                <figure class="image is-64x64">
-                  <img src="Img/responsabilidade.png"
-                    alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                </figure>
+                <button class="button is-primary" id="open-modal-btn7">
+                  Ver Código
+                </button>
+
+
+                <div class="modal" id="code-modal7">
+                  <div class="modal-background" id="modal-bg7"></div>
+
+                  <div class="modal-content">
+                    <div class="box">
+                      <h3 class="title is-4">Código dessa seção</h3>
+                      <pre><code>
+    /////////////////
+      </code></pre>
+                    </div>
+                  </div>
+
+                  <button class="modal-close is-large" aria-label="close" id="close-modal-btn7"></button>
+                </div>
+
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const openBtn = document.getElementById('open-modal-btn7');
+                    const closeBtn = document.getElementById('close-modal-btn7');
+                    const modalBg = document.getElementById('modal-bg7');
+                    const modal = document.getElementById('code-modal');
+
+                    openBtn.addEventListener('click', () => {
+                      modal.classList.add('is-active');
+                    });
+
+                    const closeModal = () => {
+                      modal.classList.remove('is-active');
+                    };
+
+                    closeBtn.addEventListener('click', closeModal);
+                    modalBg.addEventListener('click', closeModal);
+                  });
+                </script>
               </div>
 
             </div>
@@ -681,7 +933,7 @@
 
                 <div class="column is-narrow">
                   <figure class="image is-64x64">
-                    <img src="Img/centro-de-dados.png"
+                    <img src="Img/icons8-test-passed-72.png"
                       alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
                   </figure>
                 </div>
@@ -693,10 +945,46 @@
 
 
                 <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/responsabilidade.png"
-                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                  </figure>
+                  <button class="button is-primary" id="open-modal-btn8">
+                    Ver Código
+                  </button>
+
+
+                  <div class="modal" id="code-modal8">
+                    <div class="modal-background" id="modal-bg8"></div>
+
+                    <div class="modal-content">
+                      <div class="box">
+                        <h3 class="title is-4">Código dessa seção</h3>
+                        <pre><code>
+                          /////////////////
+                        </code></pre>
+                      </div>
+                    </div>
+
+                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn8"></button>
+                  </div>
+
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const openBtn = document.getElementById('open-modal-btn8');
+                      const closeBtn = document.getElementById('close-modal-btn8');
+                      const modalBg = document.getElementById('modal-bg8');
+                      const modal = document.getElementById('code-modal');
+
+                      openBtn.addEventListener('click', () => {
+                        modal.classList.add('is-active');
+                      });
+
+                      const closeModal = () => {
+                        modal.classList.remove('is-active');
+                      };
+
+                      closeBtn.addEventListener('click', closeModal);
+                      modalBg.addEventListener('click', closeModal);
+                    });
+                  </script>
                 </div>
 
               </div>
@@ -754,106 +1042,177 @@
     </div>
     <div class="container is-fluid">
       <div class="">
-       <div class="column is-narrow has-text-centered">
-                <h1 class="title"> <strong> Assine agora</strong></h1>
+        <div class="column is-narrow has-text-centered">
+          <div class="container mb-3">
+              <div class="columns is-vcentered is-centered is-mobile">
+
+
+                <div class="column is-narrow">
+                  <figure class="image is-64x64">
+                    <img src="Img/payment-method.png"
+                      alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
+                  </figure>
+                </div>
+
+
+                <div class="column is-narrow has-text-centered">
+                  <h1 class="title"> <strong>Assine agora</strong></h1>
+                </div>
+
+
+                <div class="column is-narrow">
+                  <button class="button is-primary" id="open-modal-btn9">
+                    Ver Código
+                  </button>
+
+
+                  <div class="modal" id="code-modal9">
+                    <div class="modal-background" id="modal-bg9"></div>
+
+                    <div class="modal-content">
+                      <div class="box">
+                        <h3 class="title is-4">Código dessa seção</h3>
+                        <pre><code>
+                          /////////////////
+                        </code></pre>
+                      </div>
+                    </div>
+
+                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn9"></button>
+                  </div>
+
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                      const openBtn = document.getElementById('open-modal-btn9');
+                      const closeBtn = document.getElementById('close-modal-btn9');
+                      const modalBg = document.getElementById('modal-bg9');
+                      const modal = document.getElementById('code-modal');
+
+                      openBtn.addEventListener('click', () => {
+                        modal.classList.add('is-active');
+                      });
+
+                      const closeModal = () => {
+                        modal.classList.remove('is-active');
+                      };
+
+                      closeBtn.addEventListener('click', closeModal);
+                      modalBg.addEventListener('click', closeModal);
+                    });
+                  </script>
+                </div>
+
               </div>
+            </div>
+        </div>
         <div class="columns is-centered">
-      <div class="column is-one-third ">
-        <section class="hero " >
-          <div class="hero-body " >
-            <div class="container has-text-centered  "  >
-              <div style="border: #00d1b2 2px solid; border-radius: 2rem;" >
-              <h1 class="title mb-3">
-                Teste Gratuito
-              </h1>
-              <h2 class="subtitle">
-                Tenha um breve vislumbre do que o bulma <br> pode te oferecer em uma semana
-              </h2>
-             <div style="border-top: black solid 0.05rem;">
-              <ul >
-                <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação completa e didática.</li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor framework de CSS disponivel.
-                </li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Nescessita de atribuição.
-                </li> <br>
-                <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Fazer parte dos contribuidores do projeto.</li
-                  style="list-style-type: none;"> <br>
-                <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Uso ilimitado.
-                </li> <br>
-              </ul>
-              </div>
-              <div style="border-bottom: black solid 0.05rem;">
-                <a class="button is-primary mb-3" onclick="teste()"><p>Testar por uma semana <br> Valor R$0,00 reais</p></a>
-                <script>
-                         function teste() {
-                         alert('Teste iniciado com sucesso!');
-                         }
+          <div class="column is-one-third ">
+            <section class="hero ">
+              <div class="hero-body ">
+                <div class="container has-text-centered  ">
+                  <div style="border: #00d1b2 2px solid; border-radius: 2rem;">
+                    <h1 class="title mb-3">
+                      Teste Gratuito
+                    </h1>
+                    <h2 class="subtitle">
+                      Tenha um breve vislumbre do que o bulma <br> pode te oferecer em uma semana
+                    </h2>
+                    <div style="border-top: black solid 0.05rem;">
+                      <ul>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação
+                          completa e didática.</li> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor framework
+                          de CSS disponivel.
+                        </li> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Nescessita de
+                          atribuição.
+                        </li> <br>
+                        <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Fazer parte dos
+                          contribuidores do projeto.</li style="list-style-type: none;"> <br>
+                        <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Uso ilimitado.
+                        </li> <br>
+                      </ul>
+                    </div>
+                    <div style="border-bottom: black solid 0.05rem;">
+                      <a class="button is-primary mb-3" onclick="teste()">
+                        <p>Testar por uma semana <br> Valor R$0,00 reais</p>
+                      </a>
+                      <script>
+                        function teste() {
+                          alert('Teste iniciado com sucesso!');
+                        }
                       </script>
+                    </div>
+                    <h2 class="subtitle">Formas de pagamento</h2>
+                    <ul>
+                      <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
+                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
+                      </li> <br>
+                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
+                      </li> <br>
+                    </ul>
+                  </div>
+
                 </div>
-                <h2 class="subtitle">Formas de pagamento</h2>
-                <ul>
-                   <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
-                </li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
-                </li> <br>
-                </ul>
-                </div>
-              
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="column is-one-third">
-       <section class="hero " >
-          <div class="hero-body " >
-            <div class="container has-text-centered  "  >
-              <div style="border: #00d1b2 2px solid; border-radius: 2rem;" >
-              <h1 class="title mb-3">
-                Assinar Mensalmente
-              </h1>
-              <h2 class="subtitle">
-                Use de forma ilimitada e tenhas todos beneficios que o Bulma pode te oferecer.
-              </h2>
-             <div style="border-top: black solid 0.05rem;">
-              <ul >
-                <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação completa e didática.</li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor framework de CSS disponivel.
-                </li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Fazer parte dos contribuidores do projeto.</li
-                  style="list-style-type: none;"> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;;">&#10003</span> Uso ilimitado.
-                </li> <br>
-                <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Nescessita de atribuição.
-                </li> <br>
-              </ul>
               </div>
-              <div style="border-bottom: black solid 0.05rem;">
-                <a class="button is-primary mb-3" onclick="compra()"><p>Assinar Mensalmente <br> Valor R$50,00 reais por mês</p></a>
-                 <script>
-                         function compra() {
-                         alert('Assinatura feita com sucesso!');
-                         }
-                      </script>
-                </div>
-                <h2 class="subtitle">Formas de pagamento</h2>
-                <ul>
-                   <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
-                </li> <br>
-                <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
-                </li> <br>
-                </ul>
-                </div>
-              
-            </div>
+            </section>
           </div>
-        </section>
+          <div class="column is-one-third">
+            <section class="hero ">
+              <div class="hero-body ">
+                <div class="container has-text-centered  ">
+                  <div style="border: #00d1b2 2px solid; border-radius: 2rem;">
+                    <h1 class="title mb-3">
+                      Assinar Mensalmente
+                    </h1>
+                    <h2 class="subtitle">
+                      Use de forma ilimitada e tenhas todos beneficios que o Bulma pode te oferecer.
+                    </h2>
+                    <div style="border-top: black solid 0.05rem;">
+                      <ul>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação
+                          completa e didática.</li> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor framework
+                          de CSS disponivel.
+                        </li> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Fazer parte dos
+                          contribuidores do projeto.</li style="list-style-type: none;"> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;;">&#10003</span> Uso ilimitado.
+                        </li> <br>
+                        <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Nescessita de
+                          atribuição.
+                        </li> <br>
+                      </ul>
+                    </div>
+                    <div style="border-bottom: black solid 0.05rem;">
+                      <a class="button is-primary mb-3" onclick="compra()">
+                        <p>Assinar Mensalmente <br> Valor R$50,00 reais por mês</p>
+                      </a>
+                      <script>
+                        function compra() {
+                          alert('Assinatura feita com sucesso!');
+                        }
+                      </script>
+                    </div>
+                    <h2 class="subtitle">Formas de pagamento</h2>
+                    <ul>
+                      <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
+                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
+                      </li> <br>
+                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
+                      </li> <br>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
-      </div>
-    </div>
-    
+
   </main>
   <footer class="footer" style="border-top: #00d1b2 1px solid;">
     <section class="hero">
@@ -905,11 +1264,10 @@
           <div class="column">
             <h3 class="has-text-black-bis is-size-4 mb-3">Atribuições:</h3>
             <ul>
-              <li><a href="https://www.flaticon.com/br/icones-gratis/notificacao" title="notificação ícones">Notificação
-                  ícones criados por Pixel perfect - Flaticon</a></li>
-              <li><a href="https://github.com/jgthms/bulma">
-                  <p class="has-text-link mb-3">https://github.com/jgthms/bulma</p>
-                </a></li>
+              <li><a href="https://www.flaticon.com/br/icones-gratis/alvo" title="alvo ícones">Alvo ícones criados por
+                  Magnific - Flaticon</a></li>
+              <li><a href="https://www.flaticon.com/br/icones-gratis/interface" title="interface ícones">Interface
+                  ícones criados por Eucalyp - Flaticon</a></li>
               <li><a href="https://blog.logrocket.com/bulma-css-adoption-guide/">
                   <p class="has-text-link mb-3">https://blog.logrocket.com/bulma-css-adoption-guide/</p>
                 </a></li>
