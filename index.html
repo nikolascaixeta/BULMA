@@ -16,7 +16,7 @@
   <header>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item mx-2" href="index.html">
+        <a class="navbar-item mx-2" href="#docs">
           <img src="https://bulma.io/assets/brand/Bulma%20Logo.svg" width="112" height="28">
         </a>
 
@@ -30,8 +30,8 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item ">
-            <img src="Img/icons8-livro-72.png" alt="">
+          <a class="navbar-item " href="#docs">
+            <img src="Img/icons8-livro-72.png" alt="Livro azul fechado">
             <p>
               <strong>
                 Documentação
@@ -47,38 +47,38 @@
             </a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="">
+              <a class="navbar-item" href="#historia">
                 <img src="Img/historia.png" alt="Icone que representa uma tag de codigo fechando">
                 <p><strong>Histórico de criação e evolução</strong></p>
 
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item" href="">
+              <a class="navbar-item" href="#empresa">
                 <img src="Img/centro-de-dados.png" alt="Icone de 2 engrenagens ">
                 <p><strong>Empresa responsável</strong></p>
 
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item" href="">
+              <a class="navbar-item" href="#comunidade">
                 <img src="Img/responsabilidade.png" alt="Icone de um lapis escrevendo no papel">
                 <p><strong>Comunidade de desenvolvimento</strong></p>
 
               </a>
 
               <hr class="navbar-divider">
-              <a class="navbar-item" href="">
+              <a class="navbar-item" href="#uso">
                 <img src="Img/alvo-de-dardos.png" alt="Icone que representa uma poaleta de cores com um pincel">
                 <p><strong>Motivação para uso</strong></p>
 
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item" href="">
+              <a class="navbar-item" href="#evo">
                 <img src="Img/evolucao.png" alt="Icone que representa uma poaleta de cores com um pincel">
                 <p><strong>Vantagens</strong></p>
 
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item" href="">
+              <a class="navbar-item" href="#ex">
                 <img src="Img/interface.png" alt="Icone que representa uma poaleta de cores com um pincel">
                 <p><strong>Exemplos de usabilidade</strong></p>
 
@@ -87,7 +87,7 @@
           </div>
 
 
-          <a class="navbar-item ">
+          <a class="navbar-item " href="#questionario">
             <img src="Img/icons8-test-passed-72.png" alt="">
             <p>
               <strong>
@@ -96,7 +96,7 @@
             </p>
 
           </a>
-          <a class="navbar-item ">
+          <a class="navbar-item " href="#compra">
 
             <img src="Img/payment-method.png" alt="">
             <p><strong> Assine agora</strong></p>
@@ -142,10 +142,10 @@
         <div class="navbar-end">
           <div class="navbar-item mx-2">
             <div class="buttons">
-              <a class="button is-light" href="https://github.com/nikolascaixeta/BULMA">
+              <a class="button is-light" href="https://github.com/nikolascaixeta/BULMA" target="_blank">
                 <img src="Img/githublogo.svg" alt="Logo do GitHub">
               </a>
-              <a class="button is-primary" href="#">
+              <a class="button is-primary" href="#compra">
                 <strong>Download</strong>
               </a>
 
@@ -171,7 +171,7 @@
         </div>
       </div>
     </section>
-    <section class="hero has-text-centered">
+    <section class="hero has-text-centered" id="docs">
       <div class="hero-body">
         <div class="container">
           <div class="container mb-3">
@@ -318,409 +318,409 @@
       </div>
     </section>
 
-    <body>
-      <section class="section "> <!--Modo escuro-->
+
+    <section class="section " id="historia"> <!--Modo escuro-->
+      <div class="container">
+        <div class="heading">
+
+          <div class="container">
+            <div class="columns is-vcentered is-centered is-mobile">
+
+
+              <div class="column is-narrow">
+                <figure class="image is-64x64">
+                  <img src="Img/historia.png" alt="Ícone de um pergaminho escrito representando historico de criação">
+                </figure>
+              </div>
+
+
+              <div class="column is-narrow has-text-centered">
+                <h1 class="title"> <strong>Histórico de criação e evolução </strong></h1>
+              </div>
+
+
+              <div class="column is-narrow">
+                <button class="button is-primary" id="open-modal-btn2">
+                  Ver Código
+                </button>
+
+
+                <div class="modal" id="code-modal">
+                  <div class="modal-background" id="modal-bg2"></div>
+
+                  <div class="modal-content">
+                    <div class="box">
+                      <h3 class="title is-4">Código dessa seção</h3>
+                      <pre><code>
+    /////////////////
+      </code></pre>
+                    </div>
+                  </div>
+
+                  <button class="modal-close is-large" aria-label="close" id="close-modal-btn2"></button>
+                </div>
+
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const openBtn = document.getElementById('open-modal-btn2');
+                    const closeBtn = document.getElementById('close-modal-btn2');
+                    const modalBg = document.getElementById('modal-bg2');
+                    const modal = document.getElementById('code-modal');
+
+                    openBtn.addEventListener('click', () => {
+                      modal.classList.add('is-active');
+                    });
+
+                    const closeModal = () => {
+                      modal.classList.remove('is-active');
+                    };
+
+                    closeBtn.addEventListener('click', closeModal);
+                    modalBg.addEventListener('click', closeModal);
+                  });
+                </script>
+              </div>
+
+            </div>
+          </div>
+          <div class="columns is-gap-5 ">
+
+            <div class="column ">
+
+              <h2 class="subtitle">
+                Lançado em 2016 como um projeto de código aberto criado por Jeremy Thomas, um desenvolvedor front-end,
+                o Bulma nasceu com uma proposta ousada: eliminar completamente os scripts pesados e focar 100% na
+                estilização. Desde a versão v0.0.1, ele provou ao mercado que é possível estruturar layouts complexos
+                usando apenas classes intuitivas e fáceis de ler, reduzindo drasticamente o tamanho final dos arquivos
+                do seu projeto.</h2>
+
+
+            </div>
+            <div class="column ">
+              <h2 class="subtitle">
+                Foi na consagrada série v0.9 que o framework atingiu o ápice de sua popularidade internacional,
+                tornando-se a alternativa definitiva e mais leve aos concorrentes tradicionais. Ao adotar o Flexbox
+                como padrão absoluto para o seu famoso sistema de colunas, ele conquistou uma comunidade global
+                gigantesca, garantindo milhares de tutoriais, códigos prontos e suporte estável para qualquer tipo de
+                aplicação web.
+              </h2>
+            </div>
+
+            <div class="column ">
+              <h2 class="subtitle">
+                A nova geração v1 eleva o ecossistema a outro nível, integrando o poder do Dart Sass a um suporte
+                robusto para variáveis CSS nativas. As atualizações mais recentes trouxeram recursos altamente
+                requisitados pelo mercado atual, como o sistema Smart Grid, modo escuro (Dark Mode) automatizado e um
+                controle modular profundo, permitindo customizações completas com performance ultra-otimizada.</h2>
+              </h2>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="hero" id="empresa"> <!--colunas com bordas -->
+      <div class="hero-body">
         <div class="container">
-          <div class="heading">
-
-            <div class="container">
-              <div class="columns is-vcentered is-centered is-mobile">
-
-
-                <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/historia.png" alt="Ícone de um pergaminho escrito representando historico de criação">
-                  </figure>
-                </div>
-
-
-                <div class="column is-narrow has-text-centered">
-                  <h1 class="title"> <strong>Histórico de criação e evolução </strong></h1>
-                </div>
-
-
-                <div class="column is-narrow">
-                  <button class="button is-primary" id="open-modal-btn2">
-                    Ver Código
-                  </button>
-
-
-                  <div class="modal" id="code-modal">
-                    <div class="modal-background" id="modal-bg2"></div>
-
-                    <div class="modal-content">
-                      <div class="box">
-                        <h3 class="title is-4">Código dessa seção</h3>
-                        <pre><code>
-    /////////////////
-      </code></pre>
-                      </div>
-                    </div>
-
-                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn2"></button>
-                  </div>
-
-
-                  <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                      const openBtn = document.getElementById('open-modal-btn2');
-                      const closeBtn = document.getElementById('close-modal-btn2');
-                      const modalBg = document.getElementById('modal-bg2');
-                      const modal = document.getElementById('code-modal');
-
-                      openBtn.addEventListener('click', () => {
-                        modal.classList.add('is-active');
-                      });
-
-                      const closeModal = () => {
-                        modal.classList.remove('is-active');
-                      };
-
-                      closeBtn.addEventListener('click', closeModal);
-                      modalBg.addEventListener('click', closeModal);
-                    });
-                  </script>
-                </div>
-
-              </div>
-            </div>
-            <div class="columns is-gap-5 ">
-
-              <div class="column ">
-
-                <h2 class="subtitle">
-                  Lançado em 2016 como um projeto de código aberto criado por Jeremy Thomas, um desenvolvedor front-end,
-                  o Bulma nasceu com uma proposta ousada: eliminar completamente os scripts pesados e focar 100% na
-                  estilização. Desde a versão v0.0.1, ele provou ao mercado que é possível estruturar layouts complexos
-                  usando apenas classes intuitivas e fáceis de ler, reduzindo drasticamente o tamanho final dos arquivos
-                  do seu projeto.</h2>
-
-
-              </div>
-              <div class="column ">
-                <h2 class="subtitle">
-                  Foi na consagrada série v0.9 que o framework atingiu o ápice de sua popularidade internacional,
-                  tornando-se a alternativa definitiva e mais leve aos concorrentes tradicionais. Ao adotar o Flexbox
-                  como padrão absoluto para o seu famoso sistema de colunas, ele conquistou uma comunidade global
-                  gigantesca, garantindo milhares de tutoriais, códigos prontos e suporte estável para qualquer tipo de
-                  aplicação web.
-                </h2>
-              </div>
-
-              <div class="column ">
-                <h2 class="subtitle">
-                  A nova geração v1 eleva o ecossistema a outro nível, integrando o poder do Dart Sass a um suporte
-                  robusto para variáveis CSS nativas. As atualizações mais recentes trouxeram recursos altamente
-                  requisitados pelo mercado atual, como o sistema Smart Grid, modo escuro (Dark Mode) automatizado e um
-                  controle modular profundo, permitindo customizações completas com performance ultra-otimizada.</h2>
-                </h2>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </section>
-    </body>
-
-    <body>
-
-      <section class="hero"> <!--colunas com bordas -->
-        <div class="hero-body">
           <div class="container">
-            <div class="container">
-              <div class="columns is-vcentered is-centered is-mobile">
+            <div class="columns is-vcentered is-centered is-mobile">
 
 
-                <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/centro-de-dados.png"
-                      alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
-                  </figure>
-                </div>
+              <div class="column is-narrow">
+                <figure class="image is-64x64">
+                  <img src="Img/centro-de-dados.png"
+                    alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
+                </figure>
+              </div>
 
 
-                <div class="column is-narrow has-text-centered">
-                  <h1 class="title"> <strong>Empresa responsável </strong></h1>
-                </div>
+              <div class="column is-narrow has-text-centered">
+                <h1 class="title"> <strong>Empresa responsável </strong></h1>
+              </div>
 
 
-                <div class="column is-narrow">
-                  <button class="button is-primary" id="open-modal-btn3">
-                    Ver Código
-                  </button>
+              <div class="column is-narrow">
+                <button class="button is-primary" id="open-modal-btn3">
+                  Ver Código
+                </button>
 
 
-                  <div class="modal" id="code-modal3">
-                    <div class="modal-background" id="modal-bg3"></div>
+                <div class="modal" id="code-modal3">
+                  <div class="modal-background" id="modal-bg3"></div>
 
-                    <div class="modal-content">
-                      <div class="box">
-                        <h3 class="title is-4">Código dessa seção</h3>
-                        <pre><code>
+                  <div class="modal-content">
+                    <div class="box">
+                      <h3 class="title is-4">Código dessa seção</h3>
+                      <pre><code>
     /////////////////
       </code></pre>
-                      </div>
                     </div>
-
-                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn3"></button>
                   </div>
 
-
-                  <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                      const openBtn = document.getElementById('open-modal-btn3');
-                      const closeBtn = document.getElementById('close-modal-btn3');
-                      const modalBg = document.getElementById('modal-bg3');
-                      const modal = document.getElementById('code-modal');
-
-                      openBtn.addEventListener('click', () => {
-                        modal.classList.add('is-active');
-                      });
-
-                      const closeModal = () => {
-                        modal.classList.remove('is-active');
-                      };
-
-                      closeBtn.addEventListener('click', closeModal);
-                      modalBg.addEventListener('click', closeModal);
-                    });
-                  </script>
+                  <button class="modal-close is-large" aria-label="close" id="close-modal-btn3"></button>
                 </div>
 
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <h2 class="subtitle"> O Bulma não pertence a uma empresa corporativa tradicional — ele se consolidou
-                  como um ecossistema open-source totalmente independente, projetado pelo renomado desenvolvedor
-                  front-end Jeremy Thomas. A manutenção contínua e a evolução técnica do framework acontecem de forma
-                  aberta e transparente através do GitHub oficial (jgthms/bulma), impulsionadas por milhares de
-                  colaboradores voluntários ao redor do mundo. Toda a base de código é distribuída sob a licença MIT, o
-                  que assegura liberdade jurídica total para você utilizar, modificar e comercializar seus projetos sem
-                  restrições ou custos.</h2>
-              </div>
-              <div class="column">
-                <h2 class="subtitle">Essa independência garante que o desenvolvimento do Bulma seja guiado 100% pelas
-                  necessidades reais da comunidade, e não por interesses corporativos. Sem atualizações forçadas que
-                  quebram o seu código de surpresa ou taxas ocultas de licenciamento, você tem a segurança de construir
-                  projetos comerciais, governamentais ou pessoais em uma plataforma verdadeiramente estável. O
-                  ecossistema é mantido vivo de forma transparente através do apoio de patrocinadores globais e
-                  desenvolvedores que utilizam a ferramenta diariamente para acelerar a web.</h2>
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const openBtn = document.getElementById('open-modal-btn3');
+                    const closeBtn = document.getElementById('close-modal-btn3');
+                    const modalBg = document.getElementById('modal-bg3');
+                    const modal = document.getElementById('code-modal');
+
+                    openBtn.addEventListener('click', () => {
+                      modal.classList.add('is-active');
+                    });
+
+                    const closeModal = () => {
+                      modal.classList.remove('is-active');
+                    };
+
+                    closeBtn.addEventListener('click', closeModal);
+                    modalBg.addEventListener('click', closeModal);
+                  });
+                </script>
               </div>
 
             </div>
-
+          </div>
+          <div class="columns">
+            <div class="column">
+              <h2 class="subtitle"> O Bulma não pertence a uma empresa corporativa tradicional — ele se consolidou
+                como um ecossistema open-source totalmente independente, projetado pelo renomado desenvolvedor
+                front-end Jeremy Thomas. A manutenção contínua e a evolução técnica do framework acontecem de forma
+                aberta e transparente através do GitHub oficial (jgthms/bulma), impulsionadas por milhares de
+                colaboradores voluntários ao redor do mundo. Toda a base de código é distribuída sob a licença MIT, o
+                que assegura liberdade jurídica total para você utilizar, modificar e comercializar seus projetos sem
+                restrições ou custos.</h2>
+            </div>
+            <div class="column">
+              <h2 class="subtitle">Essa independência garante que o desenvolvimento do Bulma seja guiado 100% pelas
+                necessidades reais da comunidade, e não por interesses corporativos. Sem atualizações forçadas que
+                quebram o seu código de surpresa ou taxas ocultas de licenciamento, você tem a segurança de construir
+                projetos comerciais, governamentais ou pessoais em uma plataforma verdadeiramente estável. O
+                ecossistema é mantido vivo de forma transparente através do apoio de patrocinadores globais e
+                desenvolvedores que utilizam a ferramenta diariamente para acelerar a web.</h2>
+            </div>
 
           </div>
-        </div>
-      </section>
 
-      <section class="hero"> <!--mensagem-->
-        <div class="hero-body">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="hero" id="comunidade"> <!--mensagem-->
+      <div class="hero-body">
+        <div class="container">
           <div class="container">
-            <div class="container">
-              <div class="columns is-vcentered is-centered is-mobile">
+            <div class="columns is-vcentered is-centered is-mobile">
 
 
-                <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/responsabilidade.png"
-                      alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
-                  </figure>
-                </div>
+              <div class="column is-narrow">
+                <figure class="image is-64x64">
+                  <img src="Img/responsabilidade.png"
+                    alt="Ícone de uma lampada com uma engrenagem, onde ais uma seta crescendo esponencialmente representando evolução">
+                </figure>
+              </div>
 
 
-                <div class="column is-narrow has-text-centered">
-                  <h1 class="title"> <strong> Comunidade de desenvolvimento </strong></h1>
-                </div>
+              <div class="column is-narrow has-text-centered">
+                <h1 class="title"> <strong> Comunidade de desenvolvimento </strong></h1>
+              </div>
 
 
-                <div class="column is-narrow">
-                  <button class="button is-primary" id="open-modal-btn4">
-                    Ver Código
-                  </button>
+              <div class="column is-narrow">
+                <button class="button is-primary" id="open-modal-btn4">
+                  Ver Código
+                </button>
 
 
-                  <div class="modal" id="code-modal4">
-                    <div class="modal-background" id="modal-bg4"></div>
+                <div class="modal" id="code-modal4">
+                  <div class="modal-background" id="modal-bg4"></div>
 
-                    <div class="modal-content">
-                      <div class="box">
-                        <h3 class="title is-4">Código dessa seção</h3>
-                        <pre><code>
+                  <div class="modal-content">
+                    <div class="box">
+                      <h3 class="title is-4">Código dessa seção</h3>
+                      <pre><code>
     /////////////////
       </code></pre>
-                      </div>
                     </div>
-
-                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn3"></button>
                   </div>
 
-
-                  <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                      const openBtn = document.getElementById('open-modal-btn4');
-                      const closeBtn = document.getElementById('close-modal-btn4');
-                      const modalBg = document.getElementById('modal-bg4');
-                      const modal = document.getElementById('code-modal');
-
-                      openBtn.addEventListener('click', () => {
-                        modal.classList.add('is-active');
-                      });
-
-                      const closeModal = () => {
-                        modal.classList.remove('is-active');
-                      };
-
-                      closeBtn.addEventListener('click', closeModal);
-                      modalBg.addEventListener('click', closeModal);
-                    });
-                  </script>
+                  <button class="modal-close is-large" aria-label="close" id="close-modal-btn3"></button>
                 </div>
 
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <h2 class="subtitle">
-                  <article class="message is-primary">
-                    <div class="message-body is-size-5">
-                      Bulma consolidou uma comunidade global extremamente ativa e engajada: o projeto já ultrapassa a
-                      marca de 40 mil estrelas no GitHub e conta com mais de 300 colaboradores diretos, além de
-                      registrar milhares de downloads semanais estimados por programadores do mundo todo. Essa base
-                      vibrante também mantém de forma independente diversas extensões customizadas, templates modernos e
-                      integrações completas com os principais frameworks JS do mercado (como Vue, React e Angular),
-                      reforçando a maturidade, a solidez e a versatilidade do ecossistema técnico construído ao redor do
-                      projeto.
-                    </div>
-                  </article>
-                </h2>
-              </div>
-              <div class="column">
-                <h2 class="subtitle">
-                  <article class="message is-info">
-                    <div class="message-body is-size-5">
-                      Esse engajamento global transforma o framework em uma escolha segura e altamente confiável para
-                      novos projetos no mercado. O suporte contínuo dos desenvolvedores garante que dúvidas sejam
-                      respondidas rapidamente em fóruns e que bugs sejam corrigidos quase que instantaneamente. Ao
-                      escolher o Bulma, você não está apenas baixando um arquivo de estilização, mas sim integrando-se a
-                      uma rede colaborativa de profissionais que compartilham ferramentas e criam soluções diárias para
-                      acelerar a evolução da internet.
-                    </div>
-                  </article>
-                </h2>
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const openBtn = document.getElementById('open-modal-btn4');
+                    const closeBtn = document.getElementById('close-modal-btn4');
+                    const modalBg = document.getElementById('modal-bg4');
+                    const modal = document.getElementById('code-modal');
+
+                    openBtn.addEventListener('click', () => {
+                      modal.classList.add('is-active');
+                    });
+
+                    const closeModal = () => {
+                      modal.classList.remove('is-active');
+                    };
+
+                    closeBtn.addEventListener('click', closeModal);
+                    modalBg.addEventListener('click', closeModal);
+                  });
+                </script>
               </div>
 
             </div>
-
+          </div>
+          <div class="columns">
+            <div class="column">
+              <h2 class="subtitle">
+                <article class="message is-primary">
+                  <div class="message-body is-size-5">
+                    Bulma consolidou uma comunidade global extremamente ativa e engajada: o projeto já ultrapassa a
+                    marca de 40 mil estrelas no GitHub e conta com mais de 300 colaboradores diretos, além de
+                    registrar milhares de downloads semanais estimados por programadores do mundo todo. Essa base
+                    vibrante também mantém de forma independente diversas extensões customizadas, templates modernos e
+                    integrações completas com os principais frameworks JS do mercado (como Vue, React e Angular),
+                    reforçando a maturidade, a solidez e a versatilidade do ecossistema técnico construído ao redor do
+                    projeto.
+                  </div>
+                </article>
+              </h2>
+            </div>
+            <div class="column">
+              <h2 class="subtitle">
+                <article class="message is-info">
+                  <div class="message-body is-size-5">
+                    Esse engajamento global transforma o framework em uma escolha segura e altamente confiável para
+                    novos projetos no mercado. O suporte contínuo dos desenvolvedores garante que dúvidas sejam
+                    respondidas rapidamente em fóruns e que bugs sejam corrigidos quase que instantaneamente. Ao
+                    escolher o Bulma, você não está apenas baixando um arquivo de estilização, mas sim integrando-se a
+                    uma rede colaborativa de profissionais que compartilham ferramentas e criam soluções diárias para
+                    acelerar a evolução da internet.
+                  </div>
+                </article>
+              </h2>
+            </div>
 
           </div>
+
+
         </div>
-      </section>
-      <section class="hero"> <!--grid-->
-        <div class="hero-body">
+      </div>
+    </section>
+    <section class="hero" id="uso"> <!--grid-->
+      <div class="hero-body">
+        <div class="container">
           <div class="container">
-            <div class="container">
-              <div class="columns is-vcentered is-centered is-mobile">
+            <div class="columns is-vcentered is-centered is-mobile">
 
 
-                <div class="column is-narrow">
-                  <figure class="image is-64x64">
-                    <img src="Img/alvo-de-dardos.png"
-                      alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
-                  </figure>
-                </div>
+              <div class="column is-narrow">
+                <figure class="image is-64x64">
+                  <img src="Img/alvo-de-dardos.png"
+                    alt="Ícone de uma engrenagem dividida ao meio, com a segunda metade sendo ligações">
+                </figure>
+              </div>
 
 
-                <div class="column is-narrow has-text-centered">
-                  <h1 class="title"> <strong> Motivação para uso</strong></h1>
-                </div>
+              <div class="column is-narrow has-text-centered">
+                <h1 class="title"> <strong> Motivação para uso</strong></h1>
+              </div>
 
 
-                <div class="column is-narrow">
-                  <button class="button is-primary" id="open-modal-btn5">
-                    Ver Código
-                  </button>
+              <div class="column is-narrow">
+                <button class="button is-primary" id="open-modal-btn5">
+                  Ver Código
+                </button>
 
 
-                  <div class="modal" id="code-modal5">
-                    <div class="modal-background" id="modal-bg5"></div>
+                <div class="modal" id="code-modal5">
+                  <div class="modal-background" id="modal-bg5"></div>
 
-                    <div class="modal-content">
-                      <div class="box">
-                        <h3 class="title is-4">Código dessa seção</h3>
-                        <pre><code>
+                  <div class="modal-content">
+                    <div class="box">
+                      <h3 class="title is-4">Código dessa seção</h3>
+                      <pre><code>
     /////////////////
       </code></pre>
-                      </div>
                     </div>
-
-                    <button class="modal-close is-large" aria-label="close" id="close-modal-btn5"></button>
                   </div>
 
+                  <button class="modal-close is-large" aria-label="close" id="close-modal-btn5"></button>
+                </div>
 
-                  <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                      const openBtn = document.getElementById('open-modal-btn5');
-                      const closeBtn = document.getElementById('close-modal-btn5');
-                      const modalBg = document.getElementById('modal-bg5');
-                      const modal = document.getElementById('code-modal');
 
-                      openBtn.addEventListener('click', () => {
-                        modal.classList.add('is-active');
-                      });
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const openBtn = document.getElementById('open-modal-btn5');
+                    const closeBtn = document.getElementById('close-modal-btn5');
+                    const modalBg = document.getElementById('modal-bg5');
+                    const modal = document.getElementById('code-modal');
 
-                      const closeModal = () => {
-                        modal.classList.remove('is-active');
-                      };
-
-                      closeBtn.addEventListener('click', closeModal);
-                      modalBg.addEventListener('click', closeModal);
+                    openBtn.addEventListener('click', () => {
+                      modal.classList.add('is-active');
                     });
-                  </script>
-                </div>
 
+                    const closeModal = () => {
+                      modal.classList.remove('is-active');
+                    };
+
+                    closeBtn.addEventListener('click', closeModal);
+                    modalBg.addEventListener('click', closeModal);
+                  });
+                </script>
               </div>
+
             </div>
-            <div class="fixed-grid" style="margin-top: 1rem;">
-              <div class="grid">
-                <div class="cell is-size-5 has-background-primary">
-                  <h2><strong>
-                      Curva de Aprendizado Zero em CSS:</strong></h2>
-                  <p> Você constrói layouts profissionais e limpos de imediato, eliminando a barreira técnica de regras
-                    complexas de estilização ou o excesso de classes atômicas e confusas dos concorrentes.</p>
-                </div>
-                <div class="cell is-size-5 has-background-link">
-                  <h2><strong>Componentes Prontos de Alta Estética:</strong></h2>
-                  <p> O framework entrega uma biblioteca completa de elementos de interface pré-desenhados e visualmente
-                    elegantes, poupando o tempo que você gastaria estilizando do zero a estrutura de botões, menus e
-                    caixas.</p>
-                </div>
-                <div class="cell is-size-5 has-background-warning">
-                  <h2><strong>Leveza Absoluta Sem JavaScript:</strong></h2>
-                  <p> Diferente de concorrentes que injetam scripts pesados de terceiros, o Bulma entrega responsividade
-                    nativa e animações elegantes de forma limpa, garantindo páginas mais rápidas e com melhor
-                    performance de carregamento.</p>
-                </div>
-                <div class="cell is-size-5 has-background-danger">
-                  <h2><strong>Customização Simples e Modular:</strong></h2>
-                  <p> O ecossistema permite integrar elementos isolados com facilidade a qualquer arquitetura web
-                    existente, oferecendo flexibilidade total para ajustar cores, fontes e tamanhos por meio de
-                    modificadores nativos legíveis.</p>
-                </div>
-
-              </div>
-            </div>
-
-
           </div>
+          <div class="fixed-grid" style="margin-top: 1rem;">
+            <div class="grid">
+              <div class="cell is-size-5 has-background-primary">
+                <h2><strong>
+                    Curva de Aprendizado Zero em CSS:</strong></h2>
+                <p> Você constrói layouts profissionais e limpos de imediato, eliminando a barreira técnica de regras
+                  complexas de estilização ou o excesso de classes atômicas e confusas dos concorrentes.</p>
+              </div>
+              <div class="cell is-size-5 has-background-link">
+                <h2><strong>Componentes Prontos de Alta Estética:</strong></h2>
+                <p> O framework entrega uma biblioteca completa de elementos de interface pré-desenhados e visualmente
+                  elegantes, poupando o tempo que você gastaria estilizando do zero a estrutura de botões, menus e
+                  caixas.</p>
+              </div>
+              <div class="cell is-size-5 has-background-warning">
+                <h2><strong>Leveza Absoluta Sem JavaScript:</strong></h2>
+                <p> Diferente de concorrentes que injetam scripts pesados de terceiros, o Bulma entrega responsividade
+                  nativa e animações elegantes de forma limpa, garantindo páginas mais rápidas e com melhor
+                  performance de carregamento.</p>
+              </div>
+              <div class="cell is-size-5 has-background-danger">
+                <h2><strong>Customização Simples e Modular:</strong></h2>
+                <p> O ecossistema permite integrar elementos isolados com facilidade a qualquer arquitetura web
+                  existente, oferecendo flexibilidade total para ajustar cores, fontes e tamanhos por meio de
+                  modificadores nativos legíveis.</p>
+              </div>
+
+            </div>
+          </div>
+
+
         </div>
-      </section>
+      </div>
+    </section>
 
-    </body>
 
-    <section class="hero"> <!--notificação-->
+
+    <section class="hero" id="evo"> <!--notificação-->
       <div class="hero-body">
         <div class="container">
           <div class="container">
@@ -834,7 +834,7 @@
         </div>
     </section>
 
-    <section class="hero has-text-centered"> <!--table-->
+    <section class="hero has-text-centered" id="ex"> <!--table-->
       <div class="hero-body">
         <div class="container">
           <div class="container mb-3">
@@ -923,8 +923,8 @@
       </div>
     </section>
 
-    <body>
-      <section class="section">
+
+      <section class="section" id="questionario">
         <div class="container">
           <div class="heading">
             <div class="container mb-3">
@@ -1038,12 +1038,13 @@
           </div>
         </div>
       </section>
-    </body>
+    
     </div>
-    <div class="container is-fluid">
-      <div class="">
-        <div class="column is-narrow has-text-centered">
-          <div class="container mb-3">
+    <section id="compra">
+      <div class="container is-fluid">
+        <div class="">
+          <div class="column is-narrow has-text-centered">
+            <div class="container mb-3">
               <div class="columns is-vcentered is-centered is-mobile">
 
 
@@ -1105,120 +1106,126 @@
 
               </div>
             </div>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-one-third ">
-            <section class="hero ">
-              <div class="hero-body ">
-                <div class="container has-text-centered  ">
-                  <div style="border: #00d1b2 2px solid; border-radius: 2rem;">
-                    <h1 class="title mb-3">
-                      Teste Gratuito
-                    </h1>
-                    <h2 class="subtitle">
-                      Tenha um breve vislumbre do que o bulma <br> pode te oferecer em uma semana
-                    </h2>
-                    <div style="border-top: black solid 0.05rem;">
-                      <ul>
-                        <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação
-                          completa e didática.</li> <br>
-                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor framework
-                          de CSS disponivel.
-                        </li> <br>
-                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Nescessita de
-                          atribuição.
-                        </li> <br>
-                        <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Fazer parte dos
-                          contribuidores do projeto.</li style="list-style-type: none;"> <br>
-                        <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Uso ilimitado.
-                        </li> <br>
-                      </ul>
-                    </div>
-                    <div style="border-bottom: black solid 0.05rem;">
-                      <a class="button is-primary mb-3" onclick="teste()">
-                        <p>Testar por uma semana <br> Valor R$0,00 reais</p>
-                      </a>
-                      <script>
-                        function teste() {
-                          alert('Teste iniciado com sucesso!');
-                        }
-                      </script>
-                    </div>
-                    <h2 class="subtitle">Formas de pagamento</h2>
-                    <ul>
-                      <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
-                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
-                      </li> <br>
-                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
-                      </li> <br>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-            </section>
           </div>
-          <div class="column is-one-third">
-            <section class="hero ">
-              <div class="hero-body ">
-                <div class="container has-text-centered  ">
-                  <div style="border: #00d1b2 2px solid; border-radius: 2rem;">
-                    <h1 class="title mb-3">
-                      Assinar Mensalmente
-                    </h1>
-                    <h2 class="subtitle">
-                      Use de forma ilimitada e tenhas todos beneficios que o Bulma pode te oferecer.
-                    </h2>
-                    <div style="border-top: black solid 0.05rem;">
+          <div class="columns is-centered">
+            <div class="column is-one-third ">
+              <section class="hero ">
+                <div class="hero-body ">
+                  <div class="container has-text-centered  ">
+                    <div style="border: #00d1b2 2px solid; border-radius: 2rem;">
+                      <h1 class="title mb-3">
+                        Teste Gratuito
+                      </h1>
+                      <h2 class="subtitle">
+                        Tenha um breve vislumbre do que o bulma <br> pode te oferecer em uma semana
+                      </h2>
+                      <div style="border-top: black solid 0.05rem;">
+                        <ul>
+                          <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação
+                            completa e didática.</li> <br>
+                          <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor
+                            framework
+                            de CSS disponivel.
+                          </li> <br>
+                          <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Nescessita de
+                            atribuição.
+                          </li> <br>
+                          <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Fazer parte
+                            dos
+                            contribuidores do projeto.</li style="list-style-type: none;"> <br>
+                          <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Uso ilimitado.
+                          </li> <br>
+                        </ul>
+                      </div>
+                      <div style="border-bottom: black solid 0.05rem;">
+                        <a class="button is-primary mb-3" onclick="teste()">
+                          <p>Testar por uma semana <br> Valor R$0,00 reais</p>
+                        </a>
+                        <script>
+                          function teste() {
+                            alert('Teste iniciado com sucesso!');
+                          }
+                        </script>
+                      </div>
+                      <h2 class="subtitle">Formas de pagamento</h2>
                       <ul>
-                        <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação
-                          completa e didática.</li> <br>
-                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor framework
-                          de CSS disponivel.
+                        <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
                         </li> <br>
-                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Fazer parte dos
-                          contribuidores do projeto.</li style="list-style-type: none;"> <br>
-                        <li style="list-style-type: none;"><span style="color: #00d1b2;;">&#10003</span> Uso ilimitado.
-                        </li> <br>
-                        <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Nescessita de
-                          atribuição.
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
                         </li> <br>
                       </ul>
                     </div>
-                    <div style="border-bottom: black solid 0.05rem;">
-                      <a class="button is-primary mb-3" onclick="compra()">
-                        <p>Assinar Mensalmente <br> Valor R$50,00 reais por mês</p>
-                      </a>
-                      <script>
-                        function compra() {
-                          alert('Assinatura feita com sucesso!');
-                        }
-                      </script>
-                    </div>
-                    <h2 class="subtitle">Formas de pagamento</h2>
-                    <ul>
-                      <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
-                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
-                      </li> <br>
-                      <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
-                      </li> <br>
-                    </ul>
-                  </div>
 
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
+            <div class="column is-one-third">
+              <section class="hero ">
+                <div class="hero-body ">
+                  <div class="container has-text-centered  ">
+                    <div style="border: #00d1b2 2px solid; border-radius: 2rem;">
+                      <h1 class="title mb-3">
+                        Assinar Mensalmente
+                      </h1>
+                      <h2 class="subtitle">
+                        Use de forma ilimitada e tenhas todos beneficios que o Bulma pode te oferecer.
+                      </h2>
+                      <div style="border-top: black solid 0.05rem;">
+                        <ul>
+                          <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Documentação
+                            completa e didática.</li> <br>
+                          <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Melhor
+                            framework
+                            de CSS disponivel.
+                          </li> <br>
+                          <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Fazer parte
+                            dos
+                            contribuidores do projeto.</li style="list-style-type: none;"> <br>
+                          <li style="list-style-type: none;"><span style="color: #00d1b2;;">&#10003</span> Uso
+                            ilimitado.
+                          </li> <br>
+                          <li style="list-style-type: none;"><span style="color: #f14668;">&#10005</span> Nescessita de
+                            atribuição.
+                          </li> <br>
+                        </ul>
+                      </div>
+                      <div style="border-bottom: black solid 0.05rem;">
+                        <a class="button is-primary mb-3" onclick="compra()">
+                          <p>Assinar Mensalmente <br> Valor R$50,00 reais por mês</p>
+                        </a>
+                        <script>
+                          function compra() {
+                            alert('Assinatura feita com sucesso!');
+                          }
+                        </script>
+                      </div>
+                      <h2 class="subtitle">Formas de pagamento</h2>
+                      <ul>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2">&#10003</span> Boleto</li> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Pix
+                        </li> <br>
+                        <li style="list-style-type: none;"><span style="color: #00d1b2;">&#10003</span> Cartão
+                        </li> <br>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
   </main>
   <footer class="footer" style="border-top: #00d1b2 1px solid;">
     <section class="hero">
       <div class="hero-body">
-        <div class="columns">
-          <div class="column">
+        <div class="columns has-text-centered">
+          <div class="column"> <h3 class="has-text-black-bis is-size-4 mb-3">Site oficial</h3>
             <a href="https://bulma.io">
               <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma" width="256"
                 height="48">
@@ -1227,16 +1234,16 @@
           <div class="column">
             <h3 class="has-text-black-bis is-size-4 mb-3">Atalhos:</h3>
             <ul>
-              <li><a href="">
+              <li><a href="#historia">
                   <p class="has-text-link mb-3">Sobre</p>
                 </a></li>
-              <li><a href="">
+              <li><a href="#docs">
                   <p class="has-text-link mb-3">Documentação</p>
                 </a></li>
-              <li><a href="">
+              <li><a href="#questionario">
                   <p class="has-text-link mb-3">Questionário</p>
                 </a></li>
-              <li><a href="">
+              <li><a href="#compra">
                   <p class="has-text-link mb-3">Comprar framework</p>
                 </a></li>
             </ul>
