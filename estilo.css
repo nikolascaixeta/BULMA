@@ -11,3 +11,25 @@
   
   box-shadow: 0 10px 20px rgba(10, 10, 10, 0.1) !important; 
 }
+
+table.has-background-success {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+table.has-background-success th,
+table.has-background-success td {
+  padding: 0;
+}
+
+table.table.is-bordered th,
+table.table.is-bordered td {
+  border-width: 1px !important;
+  border-color: #dbdbdb;
+}
+
+.subtitle {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px 30px;
+  border-radius: 8px;
+}
