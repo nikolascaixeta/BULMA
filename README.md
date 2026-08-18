@@ -2,8 +2,11 @@
 Repositório criado para armazenar um site feito com o auxilio do framework BULMA para a apresentação de um seminário.
 Integrantes Do Grupo:
 Nikolas: Responsável pela progamação.
+
 Ana Clara: Responsável pela pesquisa.
+
 Larissa: Responsável pela estilição.
+
 Gabriel Henrique: Responsável pela esquematização e estilização do site.
 
 14/08/2026: Inicio do projeto com a execução do inicio da base do site(Header footer e o esqueleto de cada seção) e a pesquisa.
